@@ -15,3 +15,4 @@ variable "secrets" {
     "dev.expense.rds.password" = "ExpenseApp123"
   }
 }
+
