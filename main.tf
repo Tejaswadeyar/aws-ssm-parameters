@@ -7,7 +7,7 @@ resource "aws_ssm_parameter" "parameters" {
 }
 
 
-resource "aws_ssm_parameter" "parameters" {
+resource "aws_ssm_parameter" "secretes" {
   for_each = var.secrets
   name  =  each.key
   type  = "SecureString"
