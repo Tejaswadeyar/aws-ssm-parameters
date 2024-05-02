@@ -1,13 +1,13 @@
 format_version: 10
 pipelines:
-  parameterStoreCreate:
+  ParameterStoreCreate:
     group: defaultGroup
     label_template: "${COUNT}"
     lock_behavior: none
     display_order: -1
     materials:
       ansible:
-        git: https://github.com/Tejaswadeyar/aws-ssm-parameters.git
+        git: https://github.com/Tejaswadeyar/aws-ssm-parameters
         shallow_clone: false
         auto_update: true
         branch: main
@@ -25,4 +25,4 @@ pipelines:
 
             - exec:
                 command: terraform
-                arguments: [ "apply","-auto-approve" ]
+                arguments: ["apply","-auto-approve"]
